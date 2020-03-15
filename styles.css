@@ -1,0 +1,798 @@
+/*     DEFAULTS     */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: #fff;
+    color: #101015;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+  }
+
+  .wrapper {
+      width: 100%;
+      overflow:hidden;
+  }
+
+  nav, header, footer, .top-message-banner {
+      display: block;
+  }
+
+  .nav-wrapper {
+      max-width: 1200px;
+      margin: auto;
+  }
+
+  .top-message-banner {
+    background-color: #101015;
+    text-align: center;
+    padding: .6rem;
+  }
+  
+  .top-message-banner p {
+    color: #fff;
+  }
+  
+  #header {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  .card  {
+  margin-right: 1.2rem;
+  }
+
+  #header-image img.logo {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  input[type="text"], input[type="email"] {
+  font-style: 20px;
+  width: 450px;
+  padding: .46rem;
+  }
+
+  #header-image {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .header-left {
+  flex-basis: 30%; 
+  }
+
+  .header-right {
+    flex-basis: 30%; 
+ }
+
+  .header-center {
+    flex-basis: 40%;
+  }
+
+  .header-center .o-15 {
+    position: relative;
+    top: 2px;
+    right: 40px;
+    width: 25px;
+    opacity: .15;
+  }
+  
+  .header-center .search input[type="text"]{
+  padding: 0.65rem;
+  width: 400px;;
+  align-self: center;
+  font-size: 1.1rem;
+  color: #ccc;
+  }
+
+.row {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.row-create, .row-sell, .row-join {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.row::after { 
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1    {width: 8.33%}  
+.col-2    {width: 16.66%}  
+.col-3    {width: 25%}  
+.col-4    {width: 33.33%}  
+.col-5    {width: 41.66%}  
+.col-6    {width: 50%}  
+.col-7    {width: 58.33%}  
+.col-8    {width: 66.66%}  
+.col-9    {width: 75%}  
+.col-10   {width: 83%}  
+.col-11   {width: 91.66%}  
+.col-12   {width: 100%}  
+
+
+.text-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+mt-5 {
+    margin-top: 25px;
+}
+
+mb-5 {
+    margin-bottom: 25px;
+}
+
+
+  .nav-bar {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+  ul.nav-bar{
+    background-color: #ff2216;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.nav-bar li {
+    list-style: none;
+    float: left;
+  }
+  
+ .nav-bar li.right {
+    list-style-type: none;
+    float: right;
+  }
+
+  ul.nav-bar li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.79);
+    font-weight: 400;
+    padding: 14px;
+    text-transform: uppercase;
+    transition: background-color .4s ease-in-out;
+  }
+
+  ul.nav-bar li a:hover {
+    background-color:#000;
+    color:#ffffffad;
+  }
+
+  ul.nav-bar li.dropdownIcon {
+    display: none;
+  }
+
+  /* **************  HERO ************ */
+  .hero {
+    background-image: url("images/slideBeYourOwnBoss.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(to right,#e96443,#ca228e); */
+    height: 80vh;
+  }
+
+  /************ FORM STYLING *************/
+
+  .leftsideCol {
+    margin-top: 30%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .leftsideCol h1.title {
+    color: #101015;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+    text-align: center;
+  }
+
+  .leftsideCol h2 {
+    color: #101015;
+    font-size: 36px;
+    margin-bottom: .75rem;
+    line-height: 36px;
+    text-align: center
+  }
+
+  .leftsideCol p {
+  font-size: 18px; 
+  line-height: 24px;
+  font-weight: 500;   
+  }
+
+  .rightSideCol {
+    margin-top: 30%;
+    margin-left: 5%;
+  }
+
+  .leftsideCol button {
+  position: relative;
+  display: block;
+  margin: auto; 
+  text-align: center;
+  width: 300px;
+  line-height: 56px; 
+  font-size: 24px;
+  border: none;
+  background-color: #fff;
+  font-weight: 700;
+  border-radius: 0.46rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all .4s ease-in-out;
+  }
+
+  .leftsideCol button:hover {
+    box-shadow:none;
+    background-color: #ccc;   
+  }
+
+  /* INTRO SECTION TOP */
+
+    section#intro {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 2rem ;
+    }
+    
+    #intro h2 {
+      font-size: 3.4rem;
+      font-family: 'Lato', Arial, sans-serif;
+      margin-bottom: 1rem;
+    }
+    
+    #intro p {
+      font-size: 1.4rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    #intro p span {
+      font-weight: 700;
+    }
+
+    /*  CREATE SECTION */
+
+    #section-create {
+    padding: 1.6rem 1.2rem;
+    width: 100%;
+    background-color: #e98f43;
+    min-height: 22vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0rem;
+     }
+  
+    #section-create h2 {
+    color: #020322;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    }
+  
+    #section-create p {
+    color: #020322;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    padding: 0.35rem 1rem;
+    font-weight: 500;
+    max-width: 900px;
+    }
+  
+    #section-create button {
+    font-size: 1.2rem;
+    background-color: #186268;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    margin: 0.6rem 0;
+    border-radius: 0.46rem;
+    font-weight: 700;
+    }
+
+  #section-create button:hover {
+    background-color: #41257c;
+    color: #fff;
+  }
+  
+  /*  CARDS STYLES  */
+  .card {
+    position: relative;
+    display: block;
+    margin-right: 1.4rem;
+    margin-bottom: -3rem;
+  }
+  
+  .card:nth-child(3) {
+    margin-right: 0;
+  }
+  
+  .shape {
+    position: relative;
+    top: -5.6rem;
+    left: 0rem;
+    border-top: 90px solid #101015;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 344px;
+  }
+  
+  .card-footer {
+    position: absolute;
+    bottom: 5.7rem;
+    left: 1rem;
+    color: white;
+  }
+  
+  p.collection-price { 
+    margin-top: -2px;
+    padding-right: .56rem;
+    padding-bottom: 0.23rem;
+    margin-bottom: 0rem;
+    margin-right: -2.95rem;
+    font-weight: 700;
+    float: right;
+    font-size: 1.6rem;
+    border-bottom: 8px solid #e98f43;
+  }
+
+  
+  /* SELL SECTION */
+  #section-sell {
+    padding: 1.6rem 1.2rem;
+    width: 100%;
+    background-color: #186268;
+    min-height: 22vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0rem;
+  }
+  
+  #section-sell h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin-bottom: .68rem;
+  }
+
+  #section-sell h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: .68rem;
+  }
+  
+  #section-sell p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 500;
+    padding: 0.35rem 7rem;
+  }
+  
+  .button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .button-row button {
+    font-size: 1.5rem;
+    background-color: #e98f43;
+    color: #020322;
+    border: none;
+    padding: 1rem 3rem;
+    margin: 0.6rem 0;
+    border-radius: 0.46rem;
+  }
+  
+  .button-row button:hover {
+    background-color: #b63656;
+    color: #fff;
+  }
+
+  button.artists {
+    margin-right: 1rem;
+  }
+
+  /* MAIL FORM SECTION */
+    #section-join {
+    padding: 1.6rem 1.2rem;
+    width: 100%;
+    background-color: #101015;
+    min-height: 18vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0rem;
+    }
+  
+  #section-join h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.65rem;
+  }
+  
+  #section-join p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #form {
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+  
+  #form input[type=email] {
+    flex-basis: 70%;
+    min-height: 2.6rem;
+    padding-left: 1.3rem;
+    font-size: 1.2rem;
+    border: none;
+    color: #02032288;
+  }
+  
+  #form button.join-btn {
+    flex-basis: 30%;
+    min-height: 2.6rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #e98f43;
+    color: white;
+    font-weight: 700;
+  }
+  
+  #form button.join-btn:hover {
+    background-color: #b63656;
+    color: #fff;
+  }
+
+
+  footer {
+    padding: 0 0 1rem 0;
+    background-color: #101015;
+  }
+
+   footer p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+   }
+  
+   /* SOCIAL ICONS */
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 1.2rem 0
+  }
+  
+  .twitter, .facebook, .instgram, .pinterest {
+    color: white;
+    font-size: 2rem;
+    padding-right: 0.9rem;
+  }
+
+
+
+  /* *************   MOBILE  *********** */
+
+  @media screen and (max-width: 680px) {
+
+    .nav-bar li:not(:nth-child(1)) {
+      display: none;
+    }
+
+    ul.nav-bar li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.nav-bar.responsive {
+      position: relative;
+    }
+
+    ul.nav-bar.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.nav-bar.responsive li {
+      display: inline; 
+      float: none; 
+    }
+
+    ul.nav-bar.responsive li a {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        background-color: inherit;
+        transition: all .4s ease-in-out;
+    }
+
+    ul.nav-bar.responsive li a:hover {
+    background-color: rgba(0,0,0,0.4);
+    }
+
+    /* HERO IMAGE  */
+    
+    .hero {
+      height: 34vh;
+    }
+    .leftsideCol {
+        margin: 0;
+        width: 100%;
+    }
+     
+    .leftsideCol p, .header-center {
+    display: none;
+    }
+  
+    .leftsideCol h2 {
+      margin-top: 1rem;
+      font-weight: 700;
+    }
+
+    h1.title, .leftsideCol h1.title {
+    display: none;
+    }
+
+    .col-6, .col-4 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    .col-4    {
+    margin-bottom: -2.6rem;  
+    }
+
+    .card {
+    margin-right: 0;
+    }
+
+    input[type="text"], input[type="email"] {
+    font-style: 20px;
+    width: 320px;
+    padding: .46rem;
+    border-radius: 5px;
+    border: none;
+    }
+
+    .videoContainer iframe{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: none;
+    }
+
+    /* INTRO SECTION TOP */
+
+    section#intro {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    }
+    
+    #intro h2 {
+    font-size: 2.2rem;
+    font-family: 'Lato', Arial, sans-serif;
+    margin-bottom: 1rem;
+    }
+    
+    #intro p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    }
+    
+    #intro p span {
+    font-weight: 700;
+    margin-top: 1rem;
+    }
+
+    /*  CREATE SECTION  */
+
+    #section-create {
+    padding: 1.6rem 1.2rem;
+    width: 100%;
+    background-color: #e98f43;
+    min-height: 22vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0rem;
+    }
+    
+    #section-create h2 {
+    color: #020322;
+    font-size: 2rem;
+    text-transform: uppercase;
+    }
+    
+    #section-create p, #section-sell p {
+    text-align: center;
+    color: #020322;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    padding: 0.35rem 1rem;
+    font-weight: 500;
+    max-width: 900px;
+    margin: auto;
+    }
+    
+    #section-create button {
+    font-size: 1.2rem;
+    background-color: #186268;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.6rem 0;
+    border-radius: 0.46rem;
+    }
+
+    #section-create button:hover {
+    background-color: #b63656;
+    color: #020322;
+    }
+
+    /* SELL SECTION */
+    #section-sell {
+    padding: 1.6rem 1.2rem;
+    width: 100%;
+    background-color: #186268;
+    min-height: 22vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0rem;
+    }
+  
+    #section-sell h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    }
+  
+    #section-sell p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 500;
+    padding: 0.35rem 0;
+    }
+  
+    .button-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    }
+  
+    .button-row button {
+    font-size: 1.5rem;
+    background-color: #e98f43;
+    color: #020322;
+    border: none;
+    padding: 1rem 3rem;
+    margin: 0.6rem 0;
+    border-radius: 0.46rem;
+    width: 300px;
+    }
+  
+    .button-row button:hover {
+    background-color: #b63656;
+    color: #fff;
+    border-radius: 0.46rem;
+    width: 100%;
+    }
+
+   button.artists {
+   margin-right: 0;
+   }
+
+   /* join section  */
+   .row-join {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    #form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    }
+
+    #form .join-btn {
+    display: none;
+    }
+
+   /*  CARDS STYLES  */
+   .card {
+    position: relative;
+    display: block;
+    margin-right: 0;
+  }
+  
+  .shape {
+    position: relative;
+    top: -5.6rem;
+    left: 0rem;
+    border-top: 90px solid #101015;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 285px;
+  }
+  
+  .card-footer {
+    position: absolute;
+    bottom: 5.7rem;
+    left: 1rem;
+    color: white;
+  }
+  
+  p.collection-price { 
+    margin-top: -2px;
+    padding-right: .56rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-right: -.25rem;
+    font-weight: 700;
+    float: right;
+    font-size: 1.6rem;
+    border-bottom: 8px solid #e98f43;
+  }
+}
