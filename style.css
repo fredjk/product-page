@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Lato:100,300,400,700,900|Rock+Salt&display=swap");
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.col-1    {width: 8.33%}
+.col-2    {width: 16.66%}
+.col-3    {width: 25%}
+.col-4    {width: 33.33%}
+.col-5    {width: 41.66%}
+.col-6    {width: 50%}
+.col-7    {width: 58.33%}
+.col-8    {width: 66.66%}
+.col-9    {width: 75%}
+.col-10   {width: 83%}
+.col-11   {width: 91.66%}
+.col-12   {width: 100%}
+
+.text-center {
+text-align: center;
+margin: 0 auto;
+}
+
+.col-4 {
+width: 100%;
+margin-bottom: -6.5rem;
+}
+
+.card {
+position: relative;
+display: block;
+padding: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+/* top nav  */
+header {
+background-color: #c22260;
+padding: 1.2rem;
+}
+
+span.art {
+position: absolute;
+top: 2.2rem;
+left: 6.8rem;
+color: rgba(255,255,255,0.3);
+font-size: 2.8rem;
+font-family: 'Kaushan Script';
+}
+
+ul.topnav {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+.topnav li a:after {
+  content: "|";
+  padding-left: .35rem;
+}
+
+.topnav li:last-child a:after {
+  content: "";
+}
+
+.topnav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .15em;
+  color: rgba(255,255,255,0.5);
+}
+
+/* hero section */
+#hero {
+/* background-image: url('img/alpacino_blurred.jpg');*/
+background-image: url('https://fredjk.github.io/product-page/images/slideBeYourOwnBoss.jpg');
+background-position: center;
+background-size: cover;
+text-align: center;
+padding: 1rem;
+margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 3rem;
+}
+
+#hero h1 {
+font-size: 3rem;
+line-height: 1;
+font-weight: 900;
+}
+
+#hero p {
+font-size: 1.2rem;
+line-height: 1.4;
+margin-bottom: 1.4rem;
+font-weight: 700;
+}
+
+#hero p span {
+font-weight: 700;
+}
+
+
+/* intro section */
+
+#intro {
+text-align: center;
+padding: 1rem;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+#intro h2 {
+font-size: 2.4rem;
+line-height: 1;
+font-weight: 900;
+}
+
+#intro p {
+font-size: 1.2rem;
+line-height: 1.4;
+margin-bottom: -1rem;
+}
+
+#intro p span {
+font-weight: 900;
+}
+
+/* poster gallery */
+
+.shape {
+position: relative;
+top: -6.6rem;
+left: 0rem;
+border-top: 90px solid #101015;
+border-right: 50px solid transparent;
+height: 0;
+width: 285px;
+}
+
+.card-footer {
+position: absolute;
+bottom: 8rem;
+left: 2.2rem;
+color: white;
+}
+
+h3.imageTitle {
+margin: 0;
+padding: 0;
+}
+p.collection-title {
+margin: -1rem 0;
+padding: 0;
+}
+
+p.collection-price {
+margin-top: -2px;
+margin-right: 2.75rem;
+padding-right: .56rem;
+padding-bottom: 0;
+margin-bottom: 0;
+font-weight: 700;
+float: right;
+font-size: 1.6rem;
+border-bottom: 8px solid #e98f43;
+}
+
+/* custom section */
+
+#custom {
+background-color: #3c1592;
+color: white;
+text-align: center;
+padding: 2rem;
+margin-top: 1rem;
+margin-bottom: 0;
+}
+
+#custom h2 {
+font-size: 2.4rem;
+line-height: 1.2;
+margin-bottom: .25rem;
+}
+
+#custom p {
+text-align: left;
+font-size: 1.2rem;
+line-height: 1.4;
+margin-bottom: 1.5rem;
+}
+
+#custom p span {
+font-weight: 700;
+}
+
+#custom button {
+ background-color: #c22260;
+ padding: 20px 40px;
+ border-radius: 40px;
+ color: white;
+ font-size: 18px;
+ font-weight: 700;
+ text-decoration: none;
+ vertical-align: middle;
+ border: none;
+ }
+
+#custom button:hover {
+background: #6a3dcb;
+color: #FFF;
+}
+
+/* sell section */
+#sell {
+background-color: #c22260;
+color: white;
+text-align: center;
+padding: 2rem;
+margin-top: 0rem;
+margin-bottom: 0;
+}
+
+#sell h2 {
+font-size: 2.4rem;
+line-height: 1.2;
+margin-bottom: .25rem;
+}
+
+#sell p {
+text-align: left;
+font-size: 1.2rem;
+line-height: 1.4;
+margin-bottom: 1.5rem;
+}
+
+#sell p span {
+font-weight: 700;
+}
+
+#sell button {
+ background-color:  #338eef;
+ padding: 20px 40px;
+ border-radius: 40px;
+ font-weight: 700;
+ color: white;
+ font-size: 18px;
+ letter-spacing: 2px;
+ text-decoration: none;
+ vertical-align: middle;
+ border: none;
+ }
+
+#sell button:hover {
+background: #3c1592;
+color: #fff;
+}
+
+/* join section */
+
+#join {
+background-color: #338eef;
+color: black;
+text-align: center;
+padding: 2rem;
+margin-top: 0rem;
+margin-bottom: 0;
+}
+
+#join h2 {
+font-size: 2rem;
+line-height: 1;
+margin-bottom: .25rem;
+text-transform: uppercase;
+}
+
+#join p {
+text-align: center;
+font-size: 1.2rem;
+line-height: 1.4;
+margin-bottom: 1.5rem;
+}
+
+#join p span {
+font-weight: 700;
+}
+
+/* FORM JOIN */
+
+form#form {
+  width: 290px;
+  margin: 0 auto;
+}
+
+#form input[type=email] {
+  color: #8c8c8c;
+  width: 100%;
+  min-height: 3rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  border: none;
+  text-align: center;
+  border-top-left-radius: .35rem;
+  border-top-right-radius: .35rem;
+}
+
+#form .join-btn {
+    width: 100%;
+    min-height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #c22260;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom-left-radius: .35rem;
+    border-bottom-right-radius: .35rem;
+}
+
+/* VIDEO STYLES */
+.videoContainer iframe{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+}
+
+/* footer social */
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #101015;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    font-size: .75rem;
+    color: rgba(255,255,255, 0.6);
+}
+
+.twitter, .facebook, .instgram, .pinterest {
+    color: white;
+    font-size: 2rem;
+    padding-right: 0.9rem;
+}
+
+@media (min-width: 620px) {
+
+  header {
+  background-color: #c22260;
+  width: 100%;
+  max-height: 100px;
+  padding: 0;
+  margin: 0;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    max-height: 100px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 60%;
+    margin: 1rem;
+  }
+
+  span.art {
+    position: absolute;
+    top: 1.5rem;
+    left: 4.3rem;
+    font-size: 1.6rem;
+    }
+
+    .topnav li a {
+    font-size: 1.4rem;
+    padding: 0 .75rem;
+    }
+
+    .topnav li a:after {
+    content: "|";
+    padding-left: .75rem;
+    }
+
+    /*  hero area  */
+    #hero  {
+      height:45vh;
+    }
+
+    .hero-wrapper {
+      padding: 7em;
+    }
+
+    #hero h1  {
+      margin-bottom: -0.35rem;
+    }
+
+    .col-4 {
+    width: 50%;
+    margin-bottom: -6.5rem;
+    }
+
+    .row {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+}
+
+@media (min-width: 920px) {
+
+  header {
+  background-color: #c22260;
+  width: 100%;
+  max-height: 72px;
+  padding: 0;
+  margin: 0;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    max-height: 72px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 65%;
+  }
+
+  span.art {
+    position: absolute;
+    top: 0.5rem;
+    left: 9rem;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.8rem;
+    font-family: 'Kaushan Script';
+    }
+
+    .topnav li a {
+    font-size: 1.4rem;
+    padding: 0 .85rem;
+    }
+
+    .topnav li a:after {
+    content: "|";
+    padding-left: 1rem;
+    }
+
+    /* hero section */
+
+    #hero  {
+      height: 100vh;
+    }
+
+    #hero h1 {
+    margin-top: 6em;
+    margin-bottom: .5rem;
+    }
+
+    #hero p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: -2em;
+    }
+
+    /* intro secton */
+    #intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: -1rem;
+    }
+
+    #intro p span {
+    font-weight: 900;
+    display: block;
+    }
+    /* custom  */
+    #custom p {
+    text-align: left;
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    }
+
+    /*  sell  */
+    #sell p {
+    text-align: left;
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    }
+
+    /* FORM JOIN */
+    #form{
+      display: flex;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    #form input[type=email] {
+      color: #8c8c8c;
+      flex: 0 0 70%;
+      min-height: 3.2rem;
+      border-radius: 0;
+    }
+
+    #form .join-btn {
+        flex: 0 0 30%;
+        min-height: 3.2rem;
+        border-radius: 0;
+    }
+
+  /*  Gallery Photos */
+  .row {
+    display: flex;
+  }
+
+  .col-4 {
+    width: 50%;
+    margin-bottom: -5.8rem;
+   }
+
+   .shape {
+     width: 310px;
+   }
+}
+
+@media (min-width: 1200px) {
+  /*  header and nav  */
+  /* top nav  */
+  header {
+  background-color: #c22260;
+  width: 100%;
+  max-height: 72px;
+  padding: 0;
+  margin: 0;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    max-height: 72px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 65%;
+  }
+
+  span.art {
+    position: absolute;
+    top: 0.6rem;
+    left: 21.9rem;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.8rem;
+    font-family: 'Kaushan Script';
+    }
+
+    .topnav li a {
+    font-size: 1.4rem;
+    padding: 0 .85rem;
+    }
+
+    .topnav li a:after {
+    content: "|";
+    padding-left: 1rem;
+    }
+
+    .topnav a:hover {
+     color: white;
+    }
+
+  /* intro section */
+  #intro h2 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.15rem
+  }
+
+  #intro p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: .65rem;
+  }
+
+  #intro p span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: block;
+  }
+
+  /* gallery section */
+  #gallery {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  /* custom section */
+
+  #custom {
+  padding: 2rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+  }
+
+  #custom h2 {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: .25rem;
+  }
+
+  #custom p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  }
+
+  #custom button {
+   font-size: 24px;
+   }
+
+   /* sell section */
+   #sell {
+   background-color: #c22260;
+   color: white;
+   text-align: center;
+   padding: 2rem;
+   margin-top: 0rem;
+   margin-bottom: 0;
+   }
+
+   #sell h2 {
+   font-size: 3.4rem;
+   line-height: 1.4;
+   margin-top: .25rem;
+   font-weight: 900;
+   }
+
+   #sell p {
+   max-width: 960px;
+   text-align: center;
+   font-size: 1.4rem;
+   margin: 0 auto;
+   line-height: 1.4;
+   margin-bottom: 1.5rem;
+   }
+
+   #sell button {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+
+    /* join section */
+
+    #join h2 {
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 1.6;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    text-transform: uppercase;
+    }
+
+    #join p {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: -0.25rem;
+    margin-bottom: 1.5rem;
+    }
+
+    /* FORM JOIN */
+    form#form{
+      display: flex;
+      width: 620px;
+      margin: 3em auto;
+    }
+
+    #form input[type=email] {
+      color: #8c8c8c;
+      flex: 0 0 70%;
+      min-height: 4rem;
+      font-size: 1.2rem;
+      padding-left: 1rem;
+      border: none;
+      border-top-left-radius: .35rem;
+      border-bottom-left-radius: .35rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    #form .join-btn {
+        flex: 0 0 30%;
+        min-height: 4rem;
+        font-size: 1.2rem;
+        border: none;
+        background-color: #c22260;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-top-right-radius: .35rem;
+        border-bottom-right-radius: .35rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    /* VIDEO STYLES */
+
+    .show {
+      background-color: rgb(16, 16, 21);
+    }
+    .videoContainer iframe{
+       display: flex;
+        position: relative;
+        width: 620px;
+        min-height: 380px;
+        margin: 1em auto;
+        overflow: hidden;
+        display: block;
+    }
+
+  .row {
+    display: flex;
+  }
+
+  .col-4 {
+    width: 33.33%;
+    margin-bottom: -6.5rem;
+   }
+
+   .shape {
+     width: 322px;
+   }
+}
